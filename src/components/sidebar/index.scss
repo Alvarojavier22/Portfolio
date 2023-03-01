@@ -34,6 +34,7 @@
 
         a {
             font-size: 22px;
+            color: #4d4d4e;
             display: block;
             line-height: 51px;
             height: 51px;
@@ -43,7 +44,80 @@
             i {
                 transition: all 0.3s ease-out;
             }
+
+            &:hover {
+                color: #232a85;
+
+                svg {
+                    opacity: 0;
+                }
+
+                &:after {
+                    opacity: 1;
+                }
+            }
+
+            &:after {
+                content: '';
+                font-size: 9px;
+                letter-spacing: 2px;
+                position: absolute;
+                bottom: 0;
+                display: block;
+                width: 100%;
+                text-align: center;
+                opacity: 0;
+                transition: all 0.3s ease-out;
+            }
+
+            &:first-child {
+                &::after {
+                    content: 'HOME';
+                }
+            }
+        }
+
+        a.about-link {
+            &:after {
+                content: 'ABOUT';
+            }
+        }
+
+        a.contact-link {
+            &:after {
+                content: 'CONTACT';
+            }
+        }
+
+        a.active {
+            svg {
+                color: #232a85;
+            }
         }
     }
 
+    ul {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        display: block;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        margin: 0;
+
+        li {
+            a {
+                padding: 7px 0;
+                display: block;
+                font-size: 15px;
+                line-height: 16x;
+
+                &:hover svg {
+                    color: #232a85;
+                }
+            }
+
+        }
+    }
 }
