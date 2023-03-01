@@ -7,9 +7,9 @@ const Home = () => {
     return (
         <div className="container home-page">
             <div className="text-zone">
-                <h1>Hi, <br /> I'm
-                <img src={LogoTitle} alt="developer" />
-                Alvaro
+                <h1>Hi, <br /> I'm 
+                 <img src={LogoTitle} alt="developer" />
+                lvaro
                 <br />
                 Full Stack Software Developer
                 </h1>
