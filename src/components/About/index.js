@@ -2,7 +2,7 @@ import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCss3, faGitAlt, faHtml5, faJsSquare, faPython, faReact } from '@fortawesome/free-brands-svg-icons'
+import { faCss3, faGit, faHtml5, faJsSquare, faPython, faReact } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
 
 const About = () => {
@@ -49,16 +49,16 @@ const About = () => {
           <div className='face2'>
             <FontAwesomeIcon icon={faHtml5} color="#F06529" />
           </div>
-          <div className='face3'>
+          <div className='face6'>
             <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
           </div>
           <div className='face4'>
             <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
           </div>
           <div className='face5'>
-            <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
+            <FontAwesomeIcon icon={faGit} color="#EC4D28" />
           </div>
-          <div className='face6'>
+          <div className='face3'>
             <FontAwesomeIcon icon={faPython} color="#28A4D9" />
           </div>
         </div>
