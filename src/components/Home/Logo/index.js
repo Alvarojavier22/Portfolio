@@ -15,8 +15,24 @@ const Logo = () => {
     gsap.timeline()
     .to(bgRef.current, {
       duration: 1,
-      opacity:1
+      opacity:1,
     })
+      .from(outlineLogoRef.current, {
+        drawSVG: 0,
+        duration: 20,
+      })
+    
+    gsap.fromTo(
+      solidLogoRef.current,
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        delay: 4,
+        duration: 4,
+      }
+    )
   }, [])
 
   return (
@@ -30,7 +46,7 @@ const Logo = () => {
         xmlns="http://www.w3.org/2000/svg"
       >
         <g
-          classNqme='svg-container'
+          className='svg-container'
           transform="translate(0 457) scale(.1 -.1)"
           fill="none"
         >
