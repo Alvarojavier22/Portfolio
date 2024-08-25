@@ -47,7 +47,7 @@ const Sidebar = () => (
         <Link
           target="_blank"
           rel="noreferrer"
-          to={"https://api.whatsapp.com/send?phone=5555936185123&text=Alvaro"}
+          to={"https://api.whatsapp.com/send?phone=59891445363&text=Alvaro"}
         >
           <FontAwesomeIcon icon={faWhatsapp} color="#4d4d4e" />
         </Link>

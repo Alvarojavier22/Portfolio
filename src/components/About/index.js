@@ -2,7 +2,7 @@ import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCss3, faGit, faHtml5, faJsSquare, faPython, faReact } from '@fortawesome/free-brands-svg-icons'
+import { faCss3, faGit, faHtml5, faJava, faJsSquare, faPython, faReact } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
 
 const About = () => {
@@ -19,6 +19,13 @@ const About = () => {
     <>
     <div className='container about-page'>
       <div className='text-zone'>
+      <h1>
+      <AnimatedLetters
+            letterClass={letterClass}
+            strArray={['A', 'L', 'V', 'A', 'R', 'O', ' ', ' ', 'J', 'A', 'V', 'I', 'E', 'R']}
+            idx={20}
+          />
+      </h1>
         <h1>
           <AnimatedLetters
             letterClass={letterClass}
@@ -59,7 +66,7 @@ const About = () => {
             <FontAwesomeIcon icon={faGit} color="#EC4D28" />
           </div>
           <div className='face6'>
-            <FontAwesomeIcon icon={faPython} color="#28A4D9" />
+            <FontAwesomeIcon icon={faJava} color="#f89820" />
           </div>
         </div>
       </div>
